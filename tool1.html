@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>营销号诱捕器</title>
+<link href="https://fonts.googleapis.com/css?family=Oxygen:400,700|Arimo:400,700" rel="stylesheet">
+<link rel="stylesheet" href="dist/css/style.css">
+<link rel="stylesheet" href=dist/css/button.css>
+<script src="src/js/scrollreveal.min.js"></script>
+</head>
+<body class="is-boxed has-animations">
+<div class="body-wrap boxed-container">
+	<header class="site-header">
+		<div class="container">
+			<div class="site-header-inner">
+				<div class="brand header-brand">
+					<h1 class="m-0">
+						<a href="#">
+
+						</a>
+					</h1>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+
+		<section class="features-tabs section">
+			<div class="container">
+				<div class="features-tabs-inner section-inner has-top-divider">
+					<div class="tabs-container">
+						<ul class="tabs-links">
+							<li class="is-revealing">
+								<a href="#tab-1" class="tab-link is-active">
+									<img src="dist/images/tabs-icon-01.svg" alt="Tabs icon 01">
+									<span class="h4 m-0">经典营销号</span>
+								</a>
+							</li>
+							<li class="is-revealing">
+								<a href="#tab-2" class="tab-link">
+									<img src="dist/images/tabs-icon-02.svg" alt="Tabs icon 02">
+									<span class="h4 m-0">科普营销号</span>
+								</a>
+							</li>
+							<li class="is-revealing">
+								<a href="#tab-3" class="tab-link">
+									<img src="dist/images/tabs-icon-03.svg" alt="Tabs icon 03">
+									<span class="h4 m-0">事理营销号</span>
+								</a>
+							</li>
+							<li class="is-revealing">
+								<a href="#tab-4" class="tab-link">
+									<img src="dist/images/tabs-icon-03.svg" alt="Tabs icon 03">
+									<span class="h4 m-0">音乐营销号</span>
+								</a>
+							</li>
+							<li class="is-revealing">
+								<a href="#tab-5" class="tab-link">
+									<img src="dist/images/tabs-icon-03.svg" alt="Tabs icon 03">
+									<span class="h4 m-0">排行营销号</span>
+								</a>
+							</li>
+						</ul>
+						<div class="tabs-content">
+							<div id="tab-1" class="tab-panel is-active">
+								<h2>经典营销号</h2>
+								<p>叙述一件事，包含地点·人物·起因·经过·结果五要素，是萌新营销号的基础操作</p>
+								<div style="width: 100px;height: 30px;"> </div>
+								<table>
+									<tr>
+										<p>初始化设置</p>
+										<td>主人公姓名: <input type="text" name="name" id="name"><br></td>
+										<td>营销号姓名: <input type="text" name="sname"id="sname"><br></td>
+									</tr>
+								</table>
+								<table>
+							  		<tr>
+										<p>主人公概况</p>
+										<td>居住地1: <input type="text" name="place1"><br></td>
+										<td>居住地2: <input type="text" name="place2"><br></td>
+									</tr>
+								</table>
+								<table>
+									<tr>
+										<p>主人公性别</p>									
+										<td>
+										<label>
+											<input type="radio" name="a" id="" class="a-radio">
+											<span class="b-radio"></span>男
+										</label>
+										<label>
+											<input type="radio" name="a" id="" class="a-radio">
+											<span class="b-radio"></span>女
+										</label>
+										</td>
+								  </tr>
+							    </table>
+					  		    <table>
+							  		<tr>
+									 	<p>人物目的与结果</p>
+										<td>目的: <input type="text" name="for"><br></td>
+										<td>结果: <input type="text" name="result"><br></td>
+								  </tr>
+								</table>
+								<table>
+									<tr>
+										<p>人物经过</p>
+										<td>过程1: <input type="text" name="in1"><br></td>
+										<td>过程2: <input type="text" name="in2"><br></td>
+									</tr>
+									<tr>
+										<td>过程3: <input type="text" name="in3"><br></td>
+										<td>过程4: <input type="text" name="in4"><br></td>
+								    </tr>
+							    </table>
+							    <table>
+									<tr>
+										<a class="button button-secondary button-shadow button-block" onclick="Clicked()">生成</a>
+										<div style="width: 100px;height: 30px;"> </div>
+										<div class="show" style="display:none;">
+											<script language='javascript'>
+												function Clicked(){
+												var name = document.getElementById("name").value
+												var sname = document.getElementById("sname").value
+												}
+												var len=3;
+												var rnd=Math.floor(Math.random()*len);
+												var txt=new Array(len);
+												txt[0]="hello各位观众你们好，又见面了，我是";
+												txt[1]="hi小伙伴们大家好，欢迎来到最新一期的";
+												txt[2]="hello各位大家好，欢迎回来本视频，我是";
+												txt[3]="hi,各位亲爱的观众朋友们好，欢迎大家，我是";
+												var len1=3;
+												var rnd1=Math.floor(Math.random()*len1);
+												var txt1=new Array(len1);
+												txt1[0]="，喜欢我们的视频的话请点击左上角关注我们，观看我们的最新的视频，";
+												txt1[1]="，喜欢的朋友不妨可以点一下左边的小红心和关注，时刻关注我们动态，";
+												txt1[2]="，如果你喜欢，请点击一下左上角的关注按钮，查看我们最新的视频，";
+												txt1[3]="，如果你喜欢我们的视频，可以点击一下左上角的小红心支持一下我们";
+												document.write(txt[rnd]+sname+txt1[rnd1]);
+											</script>
+										</div>
+									</tr>
+								</table>
+							</div>
+							<div id="tab-2" class="tab-panel">
+								<h2>科普营销号</h2>
+								<p>A arcu cursus vitae congue. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique.</p>
+								<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A arcu cursus vitae congue.</p>
+							</div>
+							<div id="tab-3" class="tab-panel">
+								<h2>事理营销号</h2>
+								<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+								<p class="mb-0">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt.</p>
+							</div>
+							<div id="tab-4" class="tab-panel">
+								<h2>音乐营销号</h2>
+								<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+								<p class="mb-0">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt.</p>
+							</div>
+							<div id="tab-5" class="tab-panel">
+								<h2>排行营销号</h2>
+								<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+								<p class="mb-0">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<div class="site-footer-inner">
+				<ul class="footer-links list-reset">
+					<li>
+						<a href="https://space.bilibili.com/313758599">Bilibili</a>
+					</li>
+					<li>
+						<a href="https://github.com/Virtual-NeutroN">Github</a>
+					</li>
+				</ul>
+				<div class="footer-copyright">Copyright &copy; 2020.Virtual_NeutroN All rights reserved.</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="dist/js/main.min.js"></script>
+</body>
+</html>
