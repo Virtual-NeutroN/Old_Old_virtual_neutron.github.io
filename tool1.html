@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script type="text/javascript">
+	</script>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -79,8 +81,8 @@
 								<table>
 							  		<tr>
 										<p>主人公概况</p>
-										<td>居住地1: <input type="text" name="place1"><br></td>
-										<td>居住地2: <input type="text" name="place2"><br></td>
+										<td>居住地1: <input type="text" name="place1" id="place1"><br></td>
+										<td>居住地2: <input type="text" name="place2" id="place2"><br></td>
 									</tr>
 								</table>
 								<table>
@@ -88,68 +90,92 @@
 										<p>主人公性别</p>									
 										<td>
 										<label>
-											<input type="radio" name="a" id="" class="a-radio">
+											<input type="radio" name="a" id="a" class="a-radio">
 											<span class="b-radio"></span>男
 										</label>
 										<label>
-											<input type="radio" name="a" id="" class="a-radio">
+											<input type="radio" name="a" id="a" class="a-radio">
 											<span class="b-radio"></span>女
 										</label>
 										</td>
 								  </tr>
+								</table>
+								<table>
+									<tr>
+									   <p>故事发生地点</p>
+									<td>
+										<select id="select">
+											<option>家庭</option>
+											<option>后院</option>
+											<option>医院</option>
+											<option>警察局</option>
+											<option>消防局</option>
+											<option>写字楼</option>
+											<option>学校</option>
+											<option>歌剧院</option>
+											<option>电影院</option>
+											<option>农场</option>
+											<option>乡村</option>
+											<option>马路</option>
+											<option>政府</option>
+											<option>战地</option>
+											<option>草坪</option>
+											<option>海滩</option>
+											<option>河流</option>
+											<option>湖泊</option>
+											<option>沙地</option>
+											<option>山脉</option>
+											<option>厕所</option>
+										</select>	
+										<div style="width: 100px;height: 20px;"> </div>
+									</td>
+									</tr>
 							    </table>
 					  		    <table>
 							  		<tr>
 									 	<p>人物目的与结果</p>
-										<td>目的: <input type="text" name="for"><br></td>
-										<td>结果: <input type="text" name="result"><br></td>
+										<td>目的: <input type="text" name="for" id="for"><br></td>
+										<td>结果: <input type="text" name="result" id="result"><br></td>
 								  </tr>
 								</table>
 								<table>
 									<tr>
 										<p>人物经过</p>
-										<td>过程1: <input type="text" name="in1"><br></td>
-										<td>过程2: <input type="text" name="in2"><br></td>
+										<td>过程1: <input type="text" id="in1"><br></td>
+										<td>过程2: <input type="text" id="in2"><br></td>
 									</tr>
 									<tr>
-										<td>过程3: <input type="text" name="in3"><br></td>
-										<td>过程4: <input type="text" name="in4"><br></td>
+										<td>过程3: <input type="text" id="in3"><br></td>
+										<td>过程4: <input type="text" id="in4"><br></td>
 								    </tr>
 							    </table>
 							    <table>
 									<tr>
 										<a class="button button-secondary button-shadow button-block" onclick="Clicked()">生成</a>
 										<div style="width: 100px;height: 30px;"> </div>
-										<div class="show" style="display:none;">
-											<script language='javascript'>
-												function Clicked(){
-												var name = document.getElementById("name").value
-												var sname = document.getElementById("sname").value
-												}
-												var len=3;
-												var rnd=Math.floor(Math.random()*len);
-												var txt=new Array(len);
-												txt[0]="hello各位观众你们好，又见面了，我是";
-												txt[1]="hi小伙伴们大家好，欢迎来到最新一期的";
-												txt[2]="hello各位大家好，欢迎回来本视频，我是";
-												txt[3]="hi,各位亲爱的观众朋友们好，欢迎大家，我是";
-												var len1=3;
-												var rnd1=Math.floor(Math.random()*len1);
-												var txt1=new Array(len1);
-												txt1[0]="，喜欢我们的视频的话请点击左上角关注我们，观看我们的最新的视频，";
-												txt1[1]="，喜欢的朋友不妨可以点一下左边的小红心和关注，时刻关注我们动态，";
-												txt1[2]="，如果你喜欢，请点击一下左上角的关注按钮，查看我们最新的视频，";
-												txt1[3]="，如果你喜欢我们的视频，可以点击一下左上角的小红心支持一下我们";
-												document.write(txt[rnd]+sname+txt1[rnd1]);
+										<div class="show">
+											<script src="normal Y.js">											
 											</script>
+											<p id=paragraph1></p>
+											<p id=paragraph2></p>
+											<p id=paragraph3></p>
+											<p id=paragraph4></p>
+											<p id=paragraph5></p>
 										</div>
 									</tr>
 								</table>
 							</div>
 							<div id="tab-2" class="tab-panel">
 								<h2>科普营销号</h2>
-								<p>A arcu cursus vitae congue. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique.</p>
-								<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A arcu cursus vitae congue.</p>
+								<p>科普一件物品/事情/人物，是赤裸裸的把别人的智商按在地上摩擦，这是进阶级的营销号最擅长的。</p>
+								<div style="width: 100px;height: 30px;"> </div>
+								<table>
+									<tr>
+										<p>初始化设置</p>
+										<td>事/物/人名称: <input type="text" name="anyname" id="anyname"><br></td>
+										<td>营销号姓名: <input type="text" name="sname1"id="sname1"><br></td>
+									</tr>
+								</table>
 							</div>
 							<div id="tab-3" class="tab-panel">
 								<h2>事理营销号</h2>
